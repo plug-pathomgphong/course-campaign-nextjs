@@ -6,6 +6,12 @@ yarn-debug.log*
 yarn-error.log*
 lerna-debug.log*
 
+# blockchain ignore
+.next
+ethereum/build/
+ethereum/deploy.js
+ethereum/factory.js
+ethereum/web3.js
 # Diagnostic reports (https://nodejs.org/api/report.html)
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 
