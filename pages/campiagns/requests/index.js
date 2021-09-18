@@ -2,10 +2,8 @@ import React, { Component } from "react";
 import Layout from "../../../components/Layout";
 import RequestRow from "../../../components/RequestRow";
 import Campaign from '../../../ethereum/campaign'
-import { Form, Table, Button, Message, Input } from "semantic-ui-react";
-import web3 from '../../../ethereum/web3'
-// import ContributeForm from '../../components/contributeForm'
-import { Link, Router } from '../../../routes'
+import { Table, Button } from "semantic-ui-react";
+import { Link } from '../../../routes'
 
 class RequestIndex extends Component {
     state = {
@@ -52,7 +50,7 @@ class RequestIndex extends Component {
                 <h3>Camapign Show</h3>
                 <Link route={`/campiagns/${this.props.address}/requests/new`}>
                     <a>
-                        <Button primary>Add Requests</Button>
+                        <Button primary floated="right" style={{marginBottom : 10 }} >Add Requests</Button>
                     </a>
                 </Link>  
                 <Table>
@@ -68,7 +66,10 @@ class RequestIndex extends Component {
                         </Row>
                     </Header>
                     <Body>{this.renderRows()}</Body>
-                </Table>                
+                </Table>
+                <div>
+                    Found {this.props.requestCount} requests.
+                </div>            
             </Layout>
 
         );

@@ -1,9 +1,8 @@
 import React, { Component } from "react";
 import Layout from "../../../components/Layout";
 import Campaign from '../../../ethereum/campaign'
-import { Form, Grid, Button, Message, Input } from "semantic-ui-react";
+import { Form, Button, Message, Input } from "semantic-ui-react";
 import web3 from '../../../ethereum/web3'
-// import ContributeForm from '../../components/contributeForm'
 import { Link, Router } from '../../../routes'
 
 class RequestNew extends Component {
